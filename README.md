@@ -2,6 +2,8 @@
 
 The following explanation is good to understand why WriteFile() in overlapped mode is faster than non-overlapped.
 
+Obs. I got two blue screens while using WriteFile() and ReadFile() together in overlapped mode. I guess it was just too fast for the buffer.
+
 This was found as an answer to a question on a website:
 https://groups.google.com/g/comp.os.ms-windows.programmer.win32/c/VrmME1pJ9Hw?pli=1
 
