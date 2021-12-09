@@ -3,9 +3,10 @@
 With this file, you can comunicate with any COM port. That means also virtual COM ports, which Arduino uses with the CH340 chip and driver, for example.
 The CH340 driver makes Windows recognize the USB port that is connected to the Arduino as a COM port, so that can be used with Serial communication.
 
-The following explanation is good to understand why WriteFile() in overlapped mode is faster than non-overlapped.
-
 Obs. I got two blue screens while using WriteFile() and ReadFile() together in a loop (while(1)) in overlapped mode. I guess it was just too fast for the internal buffer.
+
+
+The following explanation is good to understand why WriteFile() in overlapped mode is faster than non-overlapped, and how to handle the problems with it.
 
 This was found as an answer to a question on a website:
 https://groups.google.com/g/comp.os.ms-windows.programmer.win32/c/VrmME1pJ9Hw?pli=1
