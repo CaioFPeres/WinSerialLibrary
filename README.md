@@ -1,4 +1,4 @@
-This is a Serial Library created in C++ for Windows, using Windows API.
+#This is a Serial Library created in C++ for Windows, using Windows API.
 
 The following explanation is good to understand why WriteFile() in overlapped mode is faster than non-overlapped.
 
